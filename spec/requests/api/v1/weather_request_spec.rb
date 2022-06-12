@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "Weather API" do
   it "sends the weather for a city" do
-    create_list(:weather, 1)
+    # create_list(:weather, 1)
 
     get '/api/v1/forecast?location=denver,co'
 

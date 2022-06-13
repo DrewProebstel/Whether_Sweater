@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe WeatherFacade do
-  it 'returns a hash of different type of weathers' do
+  it 'returns a hash of weather information' do
     VCR.use_cassette("weather_facade") do
     	results = WeatherFacade.get_weather({lat: 10, lng:10})
 

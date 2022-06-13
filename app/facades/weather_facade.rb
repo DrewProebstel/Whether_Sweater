@@ -8,6 +8,6 @@ class WeatherFacade
   	hourly_weather = weather_data[:hourly][1..8].map do |hourly_data|
        HourlyWeather.new(hourly_data)
     end
-  	{current_weather: current_weather, daily_weather: daily_weather, hourly_weather: hourly_weather}
+  	test = {current_weather: current_weather, daily_weather: daily_weather, hourly_weather: hourly_weather}
   end
 end

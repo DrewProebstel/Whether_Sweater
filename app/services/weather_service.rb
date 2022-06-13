@@ -1,4 +1,3 @@
-
 class WeatherService
   def self.get_weather(lat, lng)
   	  response = Faraday.get("https://api.openweathermap.org/data/2.5/onecall") do |faraday|

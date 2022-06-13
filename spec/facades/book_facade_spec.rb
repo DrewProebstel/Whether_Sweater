@@ -10,7 +10,6 @@ RSpec.describe BookFacade do
     	expect(results[0].isbn).to eq(["9780762507849","0762507845"])
     	expect(results[0].title).to eq("Denver, Co")
     	expect(results[0].publisher).to eq(["Universal Map Enterprises"])
-
     end
   end
 end

@@ -7,7 +7,6 @@ class ImageSerializer
          type: 'image',
    attributes: {
           image: {
-               location: data.location,
               image_url: data.image_url,
                  credit: {
                     source: data.source,

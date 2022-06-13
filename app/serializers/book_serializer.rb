@@ -1,6 +1,6 @@
 class BookSerializer
   def self.format_book(books,weather,destination)
-    {
+  {
     data: {
     id: nil,
     type: 'books',
@@ -8,7 +8,7 @@ class BookSerializer
       destination: destination,
       forecast: {
         summary: weather[:current_weather].conditions,
-        temperature: weather[:current_weather].temperature
+        temperature: weather[:current_weather].temperature.to_i.to_s + " F"
       },
       total_books_found: books[:found],
       books: books[:books].map do |book|

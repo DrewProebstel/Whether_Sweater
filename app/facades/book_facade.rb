@@ -4,5 +4,6 @@ class BookFacade
     books = book_data[:docs].map do |book|
       Book.new(book)
     end
+    {found: book_data[:numFound], books: books}
   end
 end

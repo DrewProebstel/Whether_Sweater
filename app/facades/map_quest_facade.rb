@@ -3,4 +3,6 @@ class MapQuestFacade
   	data = MapQuestService.get_geocode(location)
     data[:results][0][:locations][0][:latLng]
   end
+
+
 end

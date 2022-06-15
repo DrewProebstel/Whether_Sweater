@@ -4,9 +4,14 @@ class RoadTrip
   def initialize(road_trip, origin, destination)
     @start_city = origin
     @end_city = destination
-    @travel_time = readable_time(road_trip[:route][:formattedTime])
-    @destination_geocode = road_trip[:route][:boundingBox][:ul]
-    @eta = hours_to_arrive(road_trip[:route][:formattedTime])
+    if road_trip[:route][:routeError][:errorCode] == 2
+      @travel_time = "impossible"
+      @eta = "impossible"
+    else
+      @travel_time = readable_time(road_trip[:route][:formattedTime])
+      @destination_geocode = road_trip[:route][:boundingBox][:ul]
+      @eta = hours_to_arrive(road_trip[:route][:formattedTime])
+    end
   end
 
   def readable_time(time)

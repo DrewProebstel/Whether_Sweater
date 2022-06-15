@@ -5,6 +5,9 @@ Rails.application.routes.draw do
       get 'forecast', to: 'weather#index'
       get 'backgrounds', to: 'images#index'
       get 'book-search', to: 'books#index'
+      post 'users', to: 'users#create'
+      post 'sessions', to: 'sessions#create'
+      post 'road_trip', to: 'road_trips#index' 
     end
   end
 end

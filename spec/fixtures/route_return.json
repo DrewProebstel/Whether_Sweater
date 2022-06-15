@@ -1,0 +1,367 @@
+{
+    "route": {
+        "hasTollRoad": false,
+        "hasBridge": true,
+        "boundingBox": {
+            "lr": {
+                "lng": -122.383896,
+                "lat": 41.417938
+            },
+            "ul": {
+                "lng": -122.685036,
+                "lat": 45.516018
+            }
+        },
+        "distance": 351.744,
+        "hasTimedRestriction": false,
+        "hasTunnel": false,
+        "hasHighway": true,
+        "computedWaypoints": [],
+        "routeError": {
+            "errorCode": -400,
+            "message": ""
+        },
+        "formattedTime": "05:35:53",
+        "sessionId": "62a8f075-009f-5f21-02b4-355f-065d39ca3357",
+        "hasAccessRestriction": false,
+        "realTime": 20022,
+        "hasSeasonalClosure": false,
+        "hasCountryCross": false,
+        "fuelUsed": 14.01,
+        "legs": [
+            {
+                "hasTollRoad": false,
+                "hasBridge": true,
+                "destNarrative": "Proceed to WEED, CA.",
+                "distance": 351.744,
+                "hasTimedRestriction": false,
+                "hasTunnel": false,
+                "hasHighway": true,
+                "index": 0,
+                "formattedTime": "05:35:53",
+                "origIndex": 1,
+                "hasAccessRestriction": false,
+                "hasSeasonalClosure": false,
+                "hasCountryCross": false,
+                "roadGradeStrategy": [
+                    []
+                ],
+                "destIndex": 3,
+                "time": 20153,
+                "hasUnpaved": false,
+                "origNarrative": "Go south on I-405 S.",
+                "maneuvers": [
+                    {
+                        "distance": 0.492,
+                        "streets": [
+                            "SW Broadway"
+                        ],
+                        "narrative": "Start out going south on SW Broadway toward SW Jefferson St.",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -122.681427,
+                            "lat": 45.516018
+                        },
+                        "index": 0,
+                        "formattedTime": "00:01:34",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=VYi2xJifNei9jtEJnP6NnNMqAzC7EQjB&size=225,160&locations=45.51601791381836,-122.68142700195312|marker-1||45.50935745239258,-122.6850357055664|marker-2||&center=45.51268768310547,-122.68323135375977&defaultMarker=none&zoom=10&rand=1111713664&session=62a8f075-009f-5f21-02b4-355f-065d39ca3357",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 94,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 1.166,
+                        "streets": [
+                            "I-405 S"
+                        ],
+                        "narrative": "Merge onto I-405 S toward I-5/I-84.",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -122.685036,
+                            "lat": 45.509357
+                        },
+                        "index": 1,
+                        "formattedTime": "00:01:36",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "405",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=405&d=SOUTH",
+                                "direction": 4
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=VYi2xJifNei9jtEJnP6NnNMqAzC7EQjB&size=225,160&locations=45.50935745239258,-122.6850357055664|marker-2||45.497344970703125,-122.67349243164062|marker-3||&center=45.50335121154785,-122.67926406860352&defaultMarker=none&zoom=9&rand=1111713664&session=62a8f075-009f-5f21-02b4-355f-065d39ca3357",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 96,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 349.144,
+                        "streets": [
+                            "I-5 S"
+                        ],
+                        "narrative": "Stay straight to go onto I-5 S (Crossing into California).",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -122.673492,
+                            "lat": 45.497345
+                        },
+                        "index": 2,
+                        "formattedTime": "05:30:45",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "5",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=5&d=SOUTH",
+                                "direction": 4
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=VYi2xJifNei9jtEJnP6NnNMqAzC7EQjB&size=225,160&locations=45.497344970703125,-122.67349243164062|marker-3||41.42054748535156,-122.38632202148438|marker-4||&center=43.458946228027344,-122.5299072265625&defaultMarker=none&zoom=2&rand=1111713664&session=62a8f075-009f-5f21-02b4-355f-065d39ca3357",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 19845,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 0.222,
+                        "streets": [],
+                        "narrative": "Take the S Weed Blvd/US-97 exit, EXIT 747.",
+                        "turnType": 14,
+                        "startPoint": {
+                            "lng": -122.386322,
+                            "lat": 41.420547
+                        },
+                        "index": 3,
+                        "formattedTime": "00:00:23",
+                        "directionName": "Southeast",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "747",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=747&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=VYi2xJifNei9jtEJnP6NnNMqAzC7EQjB&size=225,160&locations=41.42054748535156,-122.38632202148438|marker-4||41.417938232421875,-122.38389587402344|marker-5||&center=41.41924285888672,-122.3851089477539&defaultMarker=none&zoom=12&rand=1111713664&session=62a8f075-009f-5f21-02b4-355f-065d39ca3357",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 23,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_gr_exitright_sm.gif",
+                        "direction": 5
+                    },
+                    {
+                        "distance": 0.364,
+                        "streets": [
+                            "S Weed Blvd",
+                            "US-97 N",
+                            "CA-97"
+                        ],
+                        "narrative": "Turn left onto S Weed Blvd/US-97 N/CA-97.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -122.383896,
+                            "lat": 41.417938
+                        },
+                        "index": 4,
+                        "formattedTime": "00:00:49",
+                        "directionName": "Northwest",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "97",
+                                "type": 2,
+                                "url": "http://icons.mqcdn.com/icons/rs2.png?n=97&d=NORTH",
+                                "direction": 1
+                            },
+                            {
+                                "extraText": "",
+                                "text": "97",
+                                "type": 504,
+                                "url": "http://icons.mqcdn.com/icons/rs504.png?n=97",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=VYi2xJifNei9jtEJnP6NnNMqAzC7EQjB&size=225,160&locations=41.417938232421875,-122.38389587402344|marker-5||41.42201232910156,-122.38565063476562|marker-6||&center=41.41997528076172,-122.38477325439453&defaultMarker=none&zoom=11&rand=1111713664&session=62a8f075-009f-5f21-02b4-355f-065d39ca3357",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 49,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 2
+                    },
+                    {
+                        "distance": 0.356,
+                        "streets": [
+                            "Main St"
+                        ],
+                        "narrative": "Turn right onto Main St.",
+                        "turnType": 2,
+                        "startPoint": {
+                            "lng": -122.385651,
+                            "lat": 41.422012
+                        },
+                        "index": 5,
+                        "formattedTime": "00:00:46",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=VYi2xJifNei9jtEJnP6NnNMqAzC7EQjB&size=225,160&locations=41.42201232910156,-122.38565063476562|marker-6||41.42686462402344,-122.3842544555664|marker-7||&center=41.4244384765625,-122.38495254516602&defaultMarker=none&zoom=11&rand=1111713664&session=62a8f075-009f-5f21-02b4-355f-065d39ca3357",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 46,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 0,
+                        "streets": [],
+                        "narrative": "Welcome to WEED, CA.",
+                        "turnType": -1,
+                        "startPoint": {
+                            "lng": -122.384254,
+                            "lat": 41.426865
+                        },
+                        "index": 6,
+                        "formattedTime": "00:00:00",
+                        "directionName": "",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 0,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif",
+                        "direction": 0
+                    }
+                ],
+                "hasFerry": false
+            }
+        ],
+        "options": {
+            "arteryWeights": [],
+            "cyclingRoadFactor": 1,
+            "timeType": 0,
+            "useTraffic": false,
+            "returnLinkDirections": false,
+            "countryBoundaryDisplay": true,
+            "enhancedNarrative": false,
+            "locale": "en_US",
+            "tryAvoidLinkIds": [],
+            "drivingStyle": 2,
+            "doReverseGeocode": true,
+            "generalize": -1,
+            "mustAvoidLinkIds": [],
+            "sideOfStreetDisplay": true,
+            "routeType": "FASTEST",
+            "avoidTimedConditions": false,
+            "routeNumber": 0,
+            "shapeFormat": "raw",
+            "maxWalkingDistance": -1,
+            "destinationManeuverDisplay": true,
+            "transferPenalty": -1,
+            "narrativeType": "text",
+            "walkingSpeed": -1,
+            "urbanAvoidFactor": -1,
+            "stateBoundaryDisplay": true,
+            "unit": "M",
+            "highwayEfficiency": 22,
+            "maxLinkId": 0,
+            "maneuverPenalty": -1,
+            "avoidTripIds": [],
+            "filterZoneFactor": -1,
+            "manmaps": "true"
+        },
+        "locations": [
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -122.681427,
+                    "lat": 45.516018
+                },
+                "adminArea4": "Multnomah County",
+                "adminArea5": "Portland",
+                "postalCode": "",
+                "adminArea1": "US",
+                "adminArea3": "OR",
+                "type": "s",
+                "sideOfStreet": "N",
+                "geocodeQualityCode": "A5XAX",
+                "adminArea4Type": "County",
+                "linkId": 45805445,
+                "street": "",
+                "adminArea5Type": "City",
+                "geocodeQuality": "CITY",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -122.681425,
+                    "lat": 45.516018
+                }
+            },
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -122.384254,
+                    "lat": 41.426865
+                },
+                "adminArea4": "Siskiyou County",
+                "adminArea5": "Weed",
+                "postalCode": "",
+                "adminArea1": "US",
+                "adminArea3": "CA",
+                "type": "s",
+                "sideOfStreet": "N",
+                "geocodeQualityCode": "A5XAX",
+                "adminArea4Type": "County",
+                "linkId": 60634849,
+                "street": "",
+                "adminArea5Type": "City",
+                "geocodeQuality": "CITY",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -122.384252,
+                    "lat": 41.426863
+                }
+            }
+        ],
+        "time": 20153,
+        "hasUnpaved": false,
+        "locationSequence": [
+            0,
+            1
+        ],
+        "hasFerry": false
+    },
+    "info": {
+        "statuscode": 0,
+        "copyright": {
+            "imageAltText": "© 2022 MapQuest, Inc.",
+            "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+            "text": "© 2022 MapQuest, Inc."
+        },
+        "messages": []
+    }
+}

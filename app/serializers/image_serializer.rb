@@ -11,10 +11,10 @@ class ImageSerializer
                  credit: {
                     source: data.source,
                     author: data.author,
-                            }
-                  }
-  	            }
-              }
+            }
+          }
+        }
+      }
     }
   end
 end

@@ -46,11 +46,11 @@ RSpec.describe 'Roadtrip API' do
       binding.pry
       expect(trip_info).to be_a(Hash)
       expect(trip_info[:type]).to eq('roadtrip')
-      expect(trip_info[:attributes][:start_city]).to eq('Denver,CO')
-      expect(trip_info[:attributes][:end_city]).to eq('Pueblo,CO')
-      expect(trip_info[:attributes][:travel_time]).to eq('01h45m')
-      expect(trip_info[:attributes][:weather_at_eta][:temperature]).to eq(71.69)
-      expect(trip_info[:attributes][:weather_at_eta][:conditions]).to eq('clear sky')
+      expect(trip_info[:attributes][:start_city]).to eq('Portland,OR')
+      expect(trip_info[:attributes][:end_city]).to eq('Honolulu,HI')
+      expect(trip_info[:attributes][:travel_time]).to eq('impossible')
+      expect(trip_info[:attributes]).to_not have_key('weather_at_eta')
+
     end
   end
 end

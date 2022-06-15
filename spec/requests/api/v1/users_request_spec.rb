@@ -8,7 +8,8 @@ describe "users request" do
         password: "drew",
         password_confirmation: "drew"
       }
-      post "/api/v1/users", headers: headers, params: json_payload.to_json, as: :json
+      headers = {"CONTENT_TYPE" => "application/json"}
+      post "/api/v1/users", headers: headers, params: json_payload.to_json
       response_body = JSON.parse(response.body, symbolize_names: true)
       response = response_body[:data]
 
@@ -20,7 +21,6 @@ describe "users request" do
       expect(response[:attributes][:email]).to eq(json_payload[:email])
       expect(response[:attributes]).to have_key(:api_key)
       expect(response[:attributes][:api_key]).to be_a String
-
     end
 
     it "sends back a 400 error for bad user params" do

@@ -1,6 +1,3 @@
-
-
-
 require "rails_helper"
 
 describe "sessions request" do
@@ -12,13 +9,13 @@ describe "sessions request" do
         email: "drew2@drew.com",
         password: "drew"
       }
-      post "/api/v1/sessions", headers: headers, params: login.to_json, as: :json
+      headers = {"CONTENT_TYPE" => "application/json"}
+      post "/api/v1/sessions", headers: headers, params: login.to_json
 
       expect(response).to have_http_status(200)
 
       response_body = JSON.parse(response.body, symbolize_names: true)
       user = response_body[:data]
-
       expect(user[:type]).to eq("users")
       expect(user[:id]).to be_a String
       expect(user[:attributes]).to be_a Hash

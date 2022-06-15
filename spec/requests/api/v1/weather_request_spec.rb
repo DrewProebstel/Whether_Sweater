@@ -9,7 +9,7 @@ describe "Weather API" do
     expect(response).to be_successful
     expect(image_info[:type]).to eq("forecast")
     expect(image_info[:attributes][:current_weather][:temperature]).to eq(55.72)
-    expect(image_info[:attributes][:daily_weather][3][:min_temp]).to eq(68.34)
+    expect(image_info[:attributes][:daily_weather][3][:min_temp]).to eq(71.82)
     expect(image_info[:attributes][:hourly_weather][2][:conditions]).to eq("clear sky")
     expect(image_info[:attributes][:hourly_weather].length).to eq(8)
     expect(image_info[:attributes][:daily_weather].length).to eq(5)

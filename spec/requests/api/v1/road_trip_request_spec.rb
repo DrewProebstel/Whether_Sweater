@@ -43,14 +43,13 @@ RSpec.describe 'Roadtrip API' do
 
       expect(response.status).to eq(200)
       trip_info = JSON.parse(response.body, symbolize_names: true)[:data]
-      binding.pry
+
       expect(trip_info).to be_a(Hash)
       expect(trip_info[:type]).to eq('roadtrip')
       expect(trip_info[:attributes][:start_city]).to eq('Portland,OR')
       expect(trip_info[:attributes][:end_city]).to eq('Honolulu,HI')
       expect(trip_info[:attributes][:travel_time]).to eq('impossible')
       expect(trip_info[:attributes]).to_not have_key('weather_at_eta')
-
     end
   end
 end

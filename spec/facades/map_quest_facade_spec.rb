@@ -11,10 +11,24 @@ RSpec.describe MapQuestFacade do
     end
   end
 
-  it 'returns route data' do
+  it 'returns route data for a doable drive' do
     VCR.use_cassette("map_quest_facade_route") do
       json_response = File.read('spec/fixtures/route_return.json')
       stub_request(:get, "http://www.mapquestapi.com/directions/v2/optimizedroute?json={ locations: ['portland,or', 'weed,ca'] }").to_return(status: 200, body: json_response)
+      # allow(MapQuestService).to receive(:get_route).and_return(data)
+
+      results = MapQuestFacade.find_route('portland,or', 'weed,ca')
+
+      expect(results.travel_time).to eq("05h35m")
+      expect(results.eta).to eq(6)
+      expect(results.start_city).to eq("portland,or")
+      expect(results.end_city).to eq("weed,ca")
+    end
+  end
+  xit 'returns bad data for an impossible drive' do
+    VCR.use_cassette("map_quest_facade_route_hawaii") do
+      json_response = File.read('spec/fixtures/route_return.json')
+      stub_request(:get, "http://www.mapquestapi.com/directions/v2/optimizedroute?json={ locations: ['portland,or', 'honolulu,hi'] }").to_return(status: 200, body: json_response)
       # allow(MapQuestService).to receive(:get_route).and_return(data)
 
       trip = MapQuestFacade.find_route('portland,or', 'weed,ca')

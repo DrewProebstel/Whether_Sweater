@@ -11,7 +11,7 @@ RSpec.describe WeatherFacade do
 
     	expect(results[:daily_weather][0]).to be_an_instance_of(DailyWeather)
     	expect(results[:daily_weather].length).to eq(5)
-    	expect(results[:daily_weather][0].date).to eq('2022-06-14 04:00:00 -0700,')
+    	expect(results[:daily_weather][0].date).to eq('2022-06-13 04:00:00 -0700,')
 
       expect(results[:hourly_weather][0]).to be_an_instance_of(HourlyWeather)
       expect(results[:hourly_weather].count).to eq(8)

@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "Weather API" do
   it "sends the weather for a city" do
-    VCR.use_cassette("weather_request") do
+    VCR.use_cassette("weather_request2") do
 
     get '/api/v1/forecast?location=denver,co'
 

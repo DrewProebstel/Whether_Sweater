@@ -1,6 +1,5 @@
 class WeatherSerializer
   def self.format_weather(data)
-
   	{
   	   data: {
            id: nil,

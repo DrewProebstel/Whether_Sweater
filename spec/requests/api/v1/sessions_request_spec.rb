@@ -6,10 +6,10 @@ require "rails_helper"
 describe "sessions request" do
   describe "POST /api/v1/sessions" do
     it "creates a new session and returns user data for that session" do
-      user = User.create!(email: "drew@drew.com", password: "drew", password_confirmation: "drew")
+      user = User.create!(email: "drew2@drew.com", password: "drew", password_confirmation: "drew")
 
       login = {
-        email: "drew@drew.com",
+        email: "drew2@drew.com",
         password: "drew"
       }
       post "/api/v1/sessions", headers: headers, params: login.to_json, as: :json

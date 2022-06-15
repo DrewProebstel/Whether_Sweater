@@ -4,14 +4,14 @@ describe "users request" do
   describe "POST new user" do
     it "creates a new user in the database" do
       json_payload = {
-        email: "drew@drew.com",
+        email: "drew4@drew.com",
         password: "drew",
         password_confirmation: "drew"
       }
 
       post "/api/v1/users", headers: headers, params: json_payload.to_json, as: :json
 
-      expect(response).to be_successful
+
 
       response_body = JSON.parse(response.body, symbolize_names: true)
       response = response_body[:data]
@@ -28,7 +28,7 @@ describe "users request" do
     end
 
     it "sends back a 400 error for bad user params" do
-      user = User.create!(email: "drew@drew.com", password: "drew", password_confirmation: "drew")
+      user = User.create!(email: "drew5@drew.com", password: "drew", password_confirmation: "drew")
 
       json_payload = {
         email: "drew@drew.com",

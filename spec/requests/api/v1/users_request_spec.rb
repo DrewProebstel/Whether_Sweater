@@ -26,7 +26,7 @@ describe "users request" do
     it "sends back a 400 error for bad user params" do
       user = User.create!(email: "drew5@drew.com", password: "drew", password_confirmation: "drew")
       json_payload = {
-        email: "drew@drew.com",
+        email: "drew5@drew.com",
         password: "drew",
         password_confirmation: "drew"
       }

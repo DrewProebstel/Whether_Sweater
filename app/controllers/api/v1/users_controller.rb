@@ -1,7 +1,7 @@
 class Api::V1::UsersController < ApplicationController
   def create
-    user_details = JSON.parse(params["_json"], symbolize_names: true)
-    user = User.new(user_details)
+    # user_details = JSON.parse(params, symbolize_names: true)
+    user = User.new(params.permit(:email, :password, :password_confirmation))
     if user.save
       render json: UsersSerializer.new(user), status: :created
     else
